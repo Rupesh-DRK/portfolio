@@ -1,0 +1,23 @@
+.footer{
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+    display: grid;
+    place-content: center;
+    align-items: center;
+    background-color:inherit;
+    color: white;
+}
+.footer>.social{
+    gap:20px;
+    padding: 5px;
+    height: 30px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+
+    

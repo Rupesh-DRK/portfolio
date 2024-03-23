@@ -1,0 +1,38 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 5px;
+    background-color: rgb(234, 233, 233);
+        position: relative;
+        top:5vh;
+        border-radius: 30px;
+      
+}
+.menu>a{
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 90%;
+    text-align: center;
+    place-content: center;
+    color: black;
+}
+.menu>a>i{
+    font-weight: bold;
+    font-size: 30px;
+   color:rgb(4, 28, 185)
+}
+
+@media only screen and (max-width: 600px){
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(234, 233, 233);
+    border-bottom: 3px solid rgb(25, 37, 255);
+}
+
+
+}

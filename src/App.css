@@ -1,38 +1,324 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
   text-align: center;
+  scrollbar-width: none;
+}
+.body{
+  background-color: #333;
+  scrollbar-width: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a{
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1{
+  background-color:black;
+  text-align: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Portfolio{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap:10px
+}
+.prof-div{
+  max-width: 35vw;
+  border: .5px solid white;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  place-items: center;
+  border-radius: 23px ;
+  background-color: rgb(234, 233, 233);
+  color:black;
+  padding: 15px;
+  height: 71vh;
+}
+.prof-div > .prof-pic{
+  width:150px;
+  position: relative;
+  bottom: 10vh;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid rgb(129, 129, 130);
+}
+.prof-div > .prof-pic >img{
+  width: 100%;
+  height: 100%;
+  scale: 1.06;
+}
+.prof-div .prof-bio{
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  text-align:start;
+  place-items: start;
+  font-weight: bolder;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px;
+  border-bottom: 1px  solid black;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.prof-div>.social{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  
+  
+}
+.prof-div>.social>a{
+  height: 30px;
+}
+.social a img{
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  filter: drop-shadow(0px 3px 3px rgb(0, 0, 0));
+}
+.Container{
+  width: 60vw;
+  height: 80vh;
+  border:1px dotted white;
+  background-color: rgb(234, 233, 233);
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  top:5vh;
+  border-radius: 30px;
+  color: black;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.academic{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 5px;
+  }
+.academic>span{
+  background-color: white;
+  padding: 5px;
+  border-radius: 12px;
+  border-bottom: 1px solid;
+}
+.academic>span>span{
+  display: flex;
+  justify-content: space-between;
+}
+.academic>span>span>p{
+  font-weight:500;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.margin{
+  min-height: 80vh;
+  place-content: center;
+  align-items: center;
+  margin: auto;
+  width: 95%;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  gap: 5px;
+}
+.Projects{
+  display:flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content:space-around;
+}
+section>aside>img{
+  width: 80px;
+  border-radius: 12px;
+  filter: drop-shadow(0px 3px 2px);
+}
+section>info{
+  border-left: .5px solid black; 
+  border-radius: 12px;
+  padding: 3px;
+  box-shadow: 2px 3px 5px 1px black;
+}
+section>aside{
+  padding: 20px;
+  object-fit: contain;
+}
+section>aside>a{
+  filter: drop-shadow(0px 2px 5px rgb(0, 0, 0));
+}
+.simg{
+  width:120px;
+background-color: white;
+}
+.skills{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-around;
+  gap: 6%;
+  width: 100%;
+  
+  place-content: center;
+  align-items: center;
+}
+.skills>skill{
+
+  width: 100%;
+  height: auto;
+  display: grid;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.838);
+  border-radius: 12px;
+  padding: 5px;
+  box-shadow: 0px 3px 2px 0px black;
+}
+.skills>skill>a>img{
+  width: 100px;
+  height: 100px;
+}
+
+.certificates{
+  display: grid;
+  width: 90%;
+  height: 80vh;
+  gap: 10px;
+  margin: auto;
+}
+.certificates>section{
+  background-color: white;
+  border-radius: 12px;
+  border-bottom: 2px solid black;
+}
+.certificates>section>caption{
+ display:block;
+}
+.certificates>section>aside{
+  width: 50%;
+  height: 100%;
+  object-fit: contain;
+}
+.certificates>section>aside>img{
+  width:160px;
+  height: 150px;
+}
+.home{
+  height: 80vh;
+  width: 90%;
+  display: flex;
+}
+.home-div{
+  width: 100%;
+  display:flex;
+  position: relative;
+}
+.home-div>data{
+  width: 100%;
+  height: 60vh;
+  border: 2px solid black;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content:space-between;
+  text-align: center;
+  place-content: center;
+  position: relative;
+  top: 15vh;
+  left: -50px;
+  padding: 5px;
+}
+.home>.home-div>img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  top:30px ;
+  left: 30px;
+  z-index: 1;
+}
+h2{
+  font-size: 40px;
+  color: rgb(3, 53, 53);
+
+  border-radius: 14px;
+}
+h3{
+  color:rgb(8, 8, 120);
+}
+.green{
+  color: rgb(2, 117, 2);
+}
+
+.body>h1{
+ -webkit-text-fill-color: transparent;
+ font-size:55px ;
+ background-image: url('https://th.bing.com/th/id/R.2c66148a9c29d90d4f08dd0575c40256?rik=sj%2fbYYC7Hv3qrw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fzNbNzrh.jpg&ehk=ME67J35w%2bWCnHYELZ3TEQ2uJwRMzUhfQmerk%2f34GQ5Q%3d&risl=&pid=ImgRaw&r=0');
+ -webkit-background-clip: text;
+ background-clip: text;
+}
+
+.body>a>i{
+  display:none;
+}
+
+@media only screen and (max-width: 600px){
+ 
+ *{
+  box-sizing: border-box;
+ }
+ .body{
+    display: flex;
+    flex-direction: column; 
+    scrollbar-width: none;
+    width: 100%;  
+    height: auto;
+    scrollbar-width: none;
+    position: sticky;
   }
-  to {
-    transform: rotate(360deg);
-  }
+.prof-div{
+  display: none;
+}
+.Portfolio{
+ display: flex;
+ flex-wrap: wrap-reverse;
+ gap: 40px;
+}
+.Container{
+  width: 100%;
+  gap: 15vh;
+  padding: 3px;
+}
+.body>a>i{
+  display: flex;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  place-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 5px;
+  position:absolute;
+  left: 88%;
+  top: 75%;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight:700;
+  background-color: rgb(0, 0, 0);
+  animation: floating 3s infinite 0s ease;
+}
+@keyframes floating {
+  0% { top: 75%;}
+  50% {top: 80%;}
+  100% { bottom: 75%;}
+}
+
 }
