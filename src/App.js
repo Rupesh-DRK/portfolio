@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="body" id='body'>
     <h1>PORTFOLIO</h1>
-    <div className="Portfolio">
+    <div className="Portfolio mt-5">
       <Profile />
       <Container />
       <Menu />
